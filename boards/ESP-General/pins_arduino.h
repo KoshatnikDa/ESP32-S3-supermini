@@ -35,7 +35,7 @@ static const uint8_t RX = 44;
 #define NRF24_CE    20            // Внешний пин GP20
 
 #define IR_TX_PIN   2             // Внешний пин GP2
-#define IR_RX_PIN   0             // Внешний пин GP0
+#define IR_RX_PIN   8             // Внешний пин GP0
 
 // ==== 4. КНОПКИ НА ВНУТРЕННИХ ПАДАХ ====
 #define USE_ANALOG_BUTTONS false  
