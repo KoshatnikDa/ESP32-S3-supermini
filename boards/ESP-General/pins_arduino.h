@@ -30,7 +30,7 @@ static const uint8_t SCL = 7;
 #define MODULE_SPI_MISO 5
 #define MODULE_SPI_SCK  3
 #define SD_CARD_CS      10        // Выбор SD-карты
-#define SPI_SS_PIN      10        // Важно для RFID-модулей Брюса!
+#define SPI_SS_PIN      10        // Исправление для RFID-модулей Брюса!
 
 static const uint8_t SS = 10;
 static const uint8_t MOSI = 4;
@@ -38,7 +38,7 @@ static const uint8_t MISO = 5;
 static const uint8_t SCK = 3;
 
 // ==== 3. РАДИОМОДУЛИ И ИК ====
-#define CC1101_CSN  21            // Внешний пин GP21
+#define CC1101_CSN  14            // Перенесли на GP14, чтобы освободить GP21 для ESC
 #define CC1101_GDO0 1             // Внешний пин GP1
 
 #define NRF24_CSN   9             // Внешний пин GP9
@@ -56,6 +56,7 @@ static const uint8_t SCK = 3;
 #define BTN_LEFT    41            // Влево -> пад 41
 #define BTN_RIGHT   42            // Вправо -> пад 42
 #define BTN_SELECT  47            // ОК/Выбор -> пад 47
+#define BTN_ESC     21            // НАЗАД/ESC -> пад 21
 
 #define BTN_ACT     LOW           
 
@@ -65,7 +66,6 @@ static const uint8_t A1 = 2;
 static const uint8_t A2 = 3;
 static const uint8_t A3 = 4;
 static const uint8_t A4 = 5;
-static const uint8_t A5 = 6;
 static const uint8_t A6 = 7;
 static const uint8_t A7 = 8;
 static const uint8_t A8 = 9;
