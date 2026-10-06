@@ -30,6 +30,7 @@ static const uint8_t SCL = 7;
 #define MODULE_SPI_MISO 5
 #define MODULE_SPI_SCK  3
 #define SD_CARD_CS      10        // Выбор SD-карты
+#define SPI_SS_PIN      10        // Важно для RFID-модулей Брюса!
 
 static const uint8_t SS = 10;
 static const uint8_t MOSI = 4;
@@ -58,7 +59,7 @@ static const uint8_t SCK = 3;
 
 #define BTN_ACT     LOW           
 
-// ==== Системные аналоговые константы (Важно для компилятора!) ====
+// ==== Системные аналоговые константы ====
 static const uint8_t A0 = 1;
 static const uint8_t A1 = 2;
 static const uint8_t A2 = 3;
@@ -96,4 +97,3 @@ static const uint8_t T13 = 13;
 static const uint8_t T14 = 14;
 
 #endif /* Pins_Arduino_h */
-
